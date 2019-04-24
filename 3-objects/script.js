@@ -11,18 +11,18 @@ const bus = {
     },
     equipments: ['sae', 'tft', 'speech']
 }
-// let keys = []
-// let values = []
-//
+
 // keys.push(Object.keys(bus))
 // values.push(Object.values(bus))
-//
-// for (let i = 0 ; i<keys.length ; i++) {
-//     console.log(keys[i] + ' ' + values[i])
-// }
+
+for (let i = 0 ; i<Object.keys(bus).length ; i++) {
+    console.log(Object.keys(bus)[i],':',Object.values(bus)[i])
+} // Avec Object.keys & Object.values : on affiche les objets d'objet également
+
 for (var i in bus) {
     console.log(i + ' ' + bus[i])
-}
+} // Ici on ne peut pas afficher ce qu'il se trouve dans l'objet garage
+
 //3.2 Object.values
 console.log(data)
 let text = []
