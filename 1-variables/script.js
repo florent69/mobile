@@ -44,7 +44,7 @@ let savedGame = {
 
 console.log(settings, savedGame)
 
-savedGame = {}
+savedGame = {}                  // Ici savedGame est modifié donc il ne peut pas être en const
 settings.music = true
 settings.resolution = [3840, 2160]
 
